@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности | [Имя бота]</title>
+    <style>
+        :root {
+            --primary: #5865F2;
+            --secondary: #404EED;
+            --text: #2C2F33;
+            --light: #F2F3F5;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 1rem;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2.2rem;
+        }
+        h2 {
+            color: var(--secondary);
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+        }
+        h3 {
+            color: var(--text);
+            margin-top: 1.5rem;
+        }
+        .last-updated {
+            text-align: right;
+            font-style: italic;
+            color: #666;
+        }
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .notice {
+            background-color: var(--light);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Политика конфиденциальности</h1>
+        <p>для Discord-бота <strong>[Argus_Bot]</strong></p>
+        <div class="last-updated">Последнее обновление: 20.06.2025</div>
+    </header>
+
+    <div class="section">
+        <h2>1. Общие положения</h2>
+        <p>Настоящая Политика определяет порядок обработки данных пользователей Discord-бота [Argus_Bot] (далее — "Бот"). Используя Бота, вы соглашаетесь с условиями этой Политики.</p>
+        
+        <div class="notice">
+            <strong>Важно:</strong> Бот не хранит содержимое ваших сообщений постоянно. Данные используются исключительно для работы функций модерации и автоматизации серверов Discord.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Собираемые данные</h2>
+        
+        <h3>2.1. Автоматически собираемые данные</h3>
+        <ul>
+            <li><strong>Идентификаторы (ID):</strong> пользователей, серверов, каналов, ролей</li>
+            <li><strong>Метаданные сообщений:</strong> временные метки, авторство</li>
+            <li><strong>Данные модерации:</strong> факты нарушений, действия администраторов</li>
+        </ul>
+        
+        <h3>2.2. Временное хранение сообщений</h3>
+        <p>Сообщения хранятся в базе данных, далее БД <strong>не более 10 дней</strong> для:</p>
+        <ul>
+            <li>Команд модерации (!ban, !mute)</li>
+            <li>Автоматической фильтрации нарушений</li>
+            <li>Обеспечения работы функций Бота</li>
+            <li>Истории сообщений > логировании</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Хранение и защита данных</h2>
+        <ul>
+            <li><strong>Место хранения:</strong> Серверы на территории РФ (хостинг Timeweb)</li>
+            <li><strong>Сроки хранения:</strong>
+                <ul>
+                    <li>В БД сообщений — до 10 дней</li>
+                    <li>Журналы модерации — 30 дней</li>
+                    <li>Настройки серверов — до удаления Бота</li>
+                </ul>
+            </li>
+            <li><strong>Меры защиты:</strong> Шифрование передаваемых данных, ограниченный доступ</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Права пользователей</h2>
+        
+        <h3>4.1. Доступ и управление данными</h3>
+        <p>Вы можете:</p>
+        <ul>
+            <li>Удалить конкретное сообщение: <!/delete-my-messages>/!dmm [ID]</code></li>
+            <li>Отозвать согласие -  на обработку: исключить Бота с сервера</li>
+        </ul>
+        
+        <h3>4.2. Ограничения</h3>
+        <p>Мы сохраняем метаданные (факты нарушений) на основании:</p>
+        <ul>
+            <li>П. 7 ст. 6 152-ФЗ (противодействие нарушениям)</li>
+            <li>Правил Discord (<a href="https://discord.com/guidelines" target="_blank">Community Guidelines</a>)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. Юридические основания</h2>
+        <p>Обработка данных осуществляется в соответствии с:</p>
+        <ul>
+            <li>Федеральным законом №152-ФЗ "О персональных данных"</li>
+            <li>GDPR (для пользователей из ЕС)</li>
+            <li>Политикой Discord (<a href="https://discord.com/privacy" target="_blank">Privacy Policy</a>)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. Контакты</h2>
+        <p>По вопросам обработки данных обращайтесь:</p>
+        <ul>
+            <li>Discord: <a href="[https://discord.gg/XM2T5fUQeC]" target="_blank">Сервер поддержки</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>© 2025 [Argus_Bot]. Все права защищены.</p>
+        <p>Последняя версия документа всегда доступна по адресу: <a href="https://ваш-домен.ru/privacy">https://ваш-домен.ru/privacy</a></p>
+    </footer>
+</body>
+</html>
