@@ -182,6 +182,41 @@
     font-size: 12px;
     color: #787c7e;
 }
+.youtube-card {
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    margin: 10px 0;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.youtube-header {
+    background: #FF0000;
+    color: white;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.youtube-icon {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.youtube-content {
+    padding: 12px;
+}
+
+.youtube-example {
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 8px;
+    background: white;
+    font-size: 14px;
+}
+        
     </style>
 </head>
 <body>
@@ -260,23 +295,23 @@
 </div>
 
         <div class="api-service">
-            <h3>🎵 Музыкальные сервисы</h3>
-            <p>Для работы музыкальных функций бот использует:</p>
-            
-            <h4><span class="spotify-badge">Spotify</span></h4>
-            <ul>
-                <li>Только публичные данные (названия треков, альбомов)</li>
-                <li>Не требует авторизации пользователя</li>
-                <li>Соответствует <a href="https://www.spotify.com/legal/privacy-policy/" target="_blank">политике Spotify</a></li>
-            </ul>
+    <h3>🎵 Музыкальные сервисы</h3>
+    <p>Для работы музыкальных функций бот использует:</p>
+    
+    <h4><span class="spotify-badge">Spotify</span></h4>
+    <ul>
+        <li>Только публичные данные (названия треков, альбомов)</li>
+        <li>Не требует авторизации пользователя</li>
+        <li>Соответствует <a href="https://www.spotify.com/legal/privacy-policy/" target="_blank">политике Spotify</a></li>
+    </ul>
 
-            <h4><span class="youtube-badge">YouTube</span></h4>
-            <ul>
-                <li>Используется YouTube Data API v3</li>
-                <li>Обрабатываются только идентификаторы видео</li>
-                <li>Соблюдаются <a href="https://policies.google.com/privacy" target="_blank">правила Google</a></li>
-            </ul>
-        </div>
+    <h4><span class="youtube-badge">YouTube Music</span></h4>
+    <ul>
+        <li>Ограниченный доступ к аудиоконтенту</li>
+        <li>Не сохраняет историю прослушивания</li>
+        <li>Использует те же <a href="https://policies.google.com/privacy" target="_blank">правила Google</a></li>
+    </ul>
+</div>
 
         <div class="api-service">
             <h3><span class="topgg-badge">Top.gg</span></h3>
@@ -326,6 +361,44 @@
     </div>
     
     <p>Данные обрабатываются согласно <a href="https://www.redditinc.com/policies/privacy-policy" target="_blank">политике конфиденциальности Reddit</a>.</p>
+</div>
+
+<div class="api-service">
+    <h3>
+        <img src="https://www.youtube.com/s/desktop/d743f786/img/favicon_96x96.png" 
+             class="api-logo" 
+             alt="YouTube"
+             style="height: 24px; width: auto;">
+        YouTube API
+    </h3>
+    
+    <div class="youtube-card">
+        <div class="youtube-header">
+            <span class="youtube-icon">▶️</span>
+            <span class="youtube-title">Расширенная интеграция</span>
+        </div>
+        
+        <div class="youtube-content">
+            <p>Бот использует <a href="https://developers.google.com/youtube/v3" target="_blank">YouTube Data API v3</a> для:</p>
+            <ul>
+                <li>Поиска видео по запросу (<code>!youtube search</code>)</li>
+                <li>Получения информации о видео, каналах и плейлистах</li>
+                <li>Просмотра трендов и случайных популярных видео</li>
+            </ul>
+            
+            <div class="youtube-example">
+                <p><strong>Примеры обрабатываемых данных:</strong></p>
+                <ul>
+                    <li>ID видео/канала/плейлиста</li>
+                    <li>Метаданные (название, описание, дата публикации)</li>
+                    <li>Статистика (просмотры, лайки)</li>
+                    <li>Превью (миниатюры)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p>Обработка данных соответствует <a href="https://policies.google.com/privacy" target="_blank">политике конфиденциальности Google</a> и <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" target="_blank">условиям использования YouTube API</a>.</p>
 </div>
     
     <div class="section">
