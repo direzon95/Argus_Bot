@@ -182,6 +182,7 @@
     font-size: 12px;
     color: #787c7e;
 }
+/* Стили для YouTube блока */
 .youtube-card {
     border: 1px solid #FF0000;
     border-radius: 8px;
@@ -203,28 +204,45 @@
     padding: 12px;
 }
 
-.youtube-data-example {
+.youtube-features {
+    padding-left: 1.2rem;
+}
+
+.youtube-subfeatures {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.youtube-subfeatures li {
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.youtube-subfeatures li:before {
+    content: "○";
+    position: absolute;
+    left: 0;
+}
+
+.youtube-data-table {
     margin: 15px 0;
 }
 
-.youtube-data-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 10px;
-    margin-top: 10px;
+.youtube-data-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
 }
 
-.data-type {
-    text-align: center;
-    padding: 10px;
-    background: white;
-    border-radius: 6px;
-    border: 1px solid #eee;
+.youtube-data-table th, 
+.youtube-data-table td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
 }
 
-.data-icon {
-    font-size: 24px;
-    margin-bottom: 5px;
+.youtube-data-table th {
+    background-color: #f2f2f2;
 }
 
 .youtube-policy {
@@ -232,6 +250,7 @@
     margin-top: 10px;
     display: flex;
     align-items: center;
+    padding: 8px 0;
 }
         
     </style>
@@ -390,6 +409,7 @@
     </h3>
     
     <div class="youtube-card">
+        <!-- Заголовок с логотипом -->
         <div class="youtube-header">
             <img src="https://www.youtube.com/s/desktop/d743f786/img/favicon_32x32.png" 
                  style="height: 16px; width: auto; margin-right: 8px;">
@@ -398,50 +418,49 @@
         
         <div class="youtube-content">
             <p>Бот использует <strong>YouTube Data API v3</strong> для:</p>
-            <ul>
+            <ul class="youtube-features">
                 <li>Поиска видео по запросу (<code>!youtube search &lt;запрос&gt;</code>)</li>
                 <li>Получения информации:
-                    <ul>
-                        <li>О видео (<code>!youtube video &lt;ссылка/ID&gt;</code>)</li>
-                        <li>О каналах (<code>!youtube channel &lt;ссылка/ID&gt;</code>)</li>
-                        <li>О плейлистах (<code>!youtube playlist &lt;ссылка/ID&gt;</code>)</li>
+                    <ul class="youtube-subfeatures">
+                        <li>○ Видео (<code>!youtube video &lt;ссылка/ID&gt;</code>)</li>
+                        <li>○ Каналах (<code>!youtube channel &lt;ссылка/ID&gt;</code>)</li>
+                        <li>○ Плейлистах (<code>!youtube playlist &lt;ссылка/ID&gt;</code>)</li>
                     </ul>
                 </li>
                 <li>Просмотра трендов (<code>!youtube trending</code>)</li>
                 <li>Случайных популярных видео (<code>!youtube random</code>)</li>
             </ul>
             
-            <div class="youtube-data-example">
+            <!-- Таблица данных -->
+            <div class="youtube-data-table">
                 <p><strong>Обрабатываемые данные:</strong></p>
-                <div class="youtube-data-grid">
-                    <div class="data-type">
-                        <div class="data-icon">📹</div>
-                        <div>ID контента</div>
-                    </div>
-                    <div class="data-type">
-                        <div class="data-icon">📋</div>
-                        <div>Метаданные</div>
-                    </div>
-                    <div class="data-type">
-                        <div class="data-icon">📊</div>
-                        <div>Статистика</div>
-                    </div>
-                    <div class="data-type">
-                        <div class="data-icon">🖼️</div>
-                        <div>Превью</div>
-                    </div>
-                </div>
+                <table>
+                    <tr>
+                        <th>ID контента</th>
+                        <th>Метаданные</th>
+                        <th>Статистика</th>
+                        <th>Превью</th>
+                    </tr>
+                    <tr>
+                        <td>Видео, каналы, плейлисты</td>
+                        <td>Название, описание, дата</td>
+                        <td>Просмотры, лайки</td>
+                        <td>Миниатюры</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
     
-    <p class="youtube-policy">
+    <!-- Подвал с политикой -->
+    <div class="youtube-policy">
         <img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" 
              style="height: 14px; vertical-align: middle; margin-right: 5px;">
-        Обработка данных соответствует 
-        <a href="https://policies.google.com/privacy" target="_blank">политике Google</a> и 
-        <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" target="_blank">условиям API</a>.
-    </p>
+        <span>Обработка данных соответствует 
+            <a href="https://policies.google.com/privacy" target="_blank">политике Google</a> и 
+            <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" target="_blank">условиям API</a>.
+        </span>
+    </div>
 </div>
     
     <div class="section">
