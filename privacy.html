@@ -124,6 +124,64 @@
             padding: 1.2rem;
             border-radius: 8px;
         }
+        .reddit-card {
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    margin: 10px 0;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.reddit-header {
+    background: #FF5700;
+    color: white;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.reddit-icon {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.reddit-content {
+    padding: 12px;
+}
+
+.reddit-post-example {
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 8px;
+    background: white;
+}
+
+.reddit-post-header {
+    font-size: 12px;
+    color: #787c7e;
+    margin-bottom: 5px;
+}
+
+.reddit-username {
+    color: #0079d3;
+    font-weight: bold;
+}
+
+.reddit-subreddit {
+    margin-left: 5px;
+}
+
+.reddit-post-text {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.reddit-post-footer {
+    font-size: 12px;
+    color: #787c7e;
+}
     </style>
 </head>
 <body>
@@ -232,7 +290,7 @@
 
 <div class="api-service">
     <h3>
-        <img src="images/reddit-logo.png" 
+        <img src="https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png" 
              class="api-logo" 
              alt="Reddit"
              style="height: 24px; width: auto;">
@@ -242,7 +300,7 @@
     <div class="reddit-card">
         <div class="reddit-header">
             <span class="reddit-icon">🔼</span>
-            <span class="reddit-karma">API Integration</span>
+            <span class="reddit-karma">Интеграция с API</span>
         </div>
         
         <div class="reddit-content">
@@ -250,21 +308,25 @@
             <ul>
                 <li>Доступ только к публичным данным (посты, комментарии)</li>
                 <li>Ограниченное количество запросов (rate limiting)</li>
-                <li>Соблюдение <a href="https://www.reddit.com/wiki/api" target="_blank">Reddit API Rules</a></li>
+                <li>Соблюдение <a href="https://www.reddit.com/wiki/api" target="_blank">правил Reddit API</a></li>
+                <li>Анонимизация данных перед обработкой</li>
             </ul>
             
             <div class="reddit-post-example">
                 <div class="reddit-post-header">
-                    <span class="reddit-username">u/YourBotName</span>
-                    <span class="reddit-subreddit">posted in r/Data</span>
+                    <span class="reddit-username">u/Argus_Bot</span>
+                    <span class="reddit-subreddit">опубликовано в r/Data</span>
                 </div>
-                <p class="reddit-post-text">This bot uses Reddit API to fetch public data while respecting user privacy.</p>
+                <p class="reddit-post-text">Этот бот использует Reddit API для получения публичных данных с соблюдением конфиденциальности.</p>
                 <div class="reddit-post-footer">
-                    <span>42 upvotes • 3 comments</span>
+                    <span>42 голоса • 3 комментария</span>
                 </div>
             </div>
         </div>
     </div>
+    
+    <p>Данные обрабатываются согласно <a href="https://www.redditinc.com/policies/privacy-policy" target="_blank">политике конфиденциальности Reddit</a>.</p>
+</div>
     
     <p>Данные обрабатываются согласно <a href="https://www.redditinc.com/policies/privacy-policy" target="_blank">политике конфиденциальности Reddit</a>.</p>
 </div>
