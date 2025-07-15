@@ -481,7 +481,7 @@
     </div>
 </div>
 
-<div class="api-service">
+<<div class="api-service">
     <h3>
         <img src="https://www.google.com/s2/favicons?domain=virustotal.com&sz=32"
              class="api-logo" 
@@ -489,14 +489,17 @@
              style="height: 20px; width: 20px; vertical-align: middle;">
         VirusTotal API
     </h3>
-    <p>Для проверки файлов/ссылок администраторы используют <code>#!vtcheck</code> через <a href="https://www.virustotal.com" target="_blank">VirusTotal</a>:</p>
+    <p>Для проверки файлов и ссылок на безопасность администраторы серверов могут использовать команду <code>#!vtcheck</code>, которая взаимодействует с <a href="https://www.virustotal.com" target="_blank">VirusTotal</a>.</p>
+    
+    <h4>Как это работает:</h4>
     <ul>
-        <li>Файлы временно загружаются для анализа (не сохраняются)</li>
-        <li>URL передаются в хешированном виде (SHA-256)</li>
+        <li><strong>Файлы:</strong> временно загружаются в VirusTotal для анализа (не сохраняются после проверки)</li>
+        <li><strong>URL-адреса:</strong> передаются в хешированном виде (SHA-256)</li>
+        <li><strong>Данные не хранятся</strong> в базе бота после проверки</li>
     </ul>
+    
     <div class="notice">
-        <strong>Доступно только модераторам.</strong> Отправка данных согласуется с 
-        <a href="https://support.virustotal.com/hc/en-us/articles/115002168385-Privacy-Policy" target="_blank">политикой VirusTotal</a>.
+        <strong>Важно:</strong> Проверка доступна только администраторам и модераторам. Отправляя файл или ссылку, они соглашаются с их передачей в VirusTotal в соответствии с <a href="https://support.virustotal.com/hc/en-us/articles/115002168385-Privacy-Policy" target="_blank">политикой конфиденциальности VirusTotal</a>.
     </div>
 </div>
     
