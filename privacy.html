@@ -480,6 +480,38 @@
         </span>
     </div>
 </div>
+
+<div class="api-service">
+    <h3>
+        <img src="https://www.virustotal.com/gui/images/favicon.ico" 
+             class="api-logo" 
+             alt="VirusTotal"
+             style="height: 20px; width: auto;">
+        VirusTotal API
+    </h3>
+    <p>Для проверки файлов и ссылок на безопасность используется сервис <a href="https://www.virustotal.com" target="_blank">VirusTotal</a> через команду <code>#!vtcheck</code>.</p>
+    
+    <h4>Обрабатываемые данные:</h4>
+    <ul>
+        <li><strong>Файлы:</strong> временно загружаются для анализа (не сохраняются после проверки)</li>
+        <li><strong>URL-адреса:</strong> передаются в хешированном виде (SHA-256)</li>
+        <li><strong>Результаты сканирования:</strong> отображаются только для отправителя</li>
+    </ul>
+    
+    <h4>Особенности обработки:</h4>
+    <ul>
+        <li>Максимальный размер файла: 32 МБ (ограничение VirusTotal)</li>
+        <li>Лимит запросов: 4 проверки в минуту (ограничение API)</li>
+        <li>Данные не сохраняются в нашей базе после проверки</li>
+    </ul>
+    
+    <p>Использование API соответствует <a href="https://support.virustotal.com/hc/en-us/articles/115002168385-Privacy-Policy" target="_blank">политике конфиденциальности VirusTotal</a>.</p>
+    
+    <div class="notice">
+        <strong>Важно:</strong> Отправляя файл или ссылку на проверку, вы соглашаетесь с их передачей в VirusTotal. 
+        Не проверяйте конфиденциальные или приватные материалы.
+    </div>
+</div>
     
     <div class="section">
         <h2>5. Права пользователей</h2>
