@@ -272,7 +272,7 @@
     <header>
         <h1>Политика конфиденциальности</h1>
         <p>для Discord-бота <strong>Argus_Bot</strong></p>
-        <div class="last-updated">Последнее обновление: 30.06.2025</div>
+        <div class="last-updated">Последнее обновление: 10.07.2025</div>
     </header>
 
     <div class="section">
@@ -482,34 +482,18 @@
 </div>
 
 <div class="api-service">
-    <h3>
-        <img src="https://www.virustotal.com/gui/images/favicon.ico" 
-             class="api-logo" 
-             alt="VirusTotal"
-             style="height: 20px; width: auto;">
-        VirusTotal API
-    </h3>
-    <p>Для проверки файлов и ссылок на безопасность используется сервис <a href="https://www.virustotal.com" target="_blank">VirusTotal</a> через команду <code>#!vtcheck</code>.</p>
+    <h3>VirusTotal API</h3>
+    <p>Для проверки файлов и ссылок на безопасность администраторы серверов могут использовать команду <code>#!vtcheck</code>, которая взаимодействует с <a href="https://www.virustotal.com" target="_blank">VirusTotal</a>.</p>
     
-    <h4>Обрабатываемые данные:</h4>
+    <h4>Как это работает:</h4>
     <ul>
-        <li><strong>Файлы:</strong> временно загружаются для анализа (не сохраняются после проверки)</li>
-        <li><strong>URL-адреса:</strong> передаются в хешированном виде (SHA-256)</li>
-        <li><strong>Результаты сканирования:</strong> отображаются только для отправителя</li>
+        <li><strong>Файлы:</strong> временно загружаются в VirusTotal для анализа (не сохраняются после проверки).</li>
+        <li><strong>URL-адреса:</strong> передаются в хешированном виде (SHA-256).</li>
+        <li><strong>Данные не хранятся</strong> в базе бота после проверки.</li>
     </ul>
-    
-    <h4>Особенности обработки:</h4>
-    <ul>
-        <li>Максимальный размер файла: 32 МБ (ограничение VirusTotal)</li>
-        <li>Лимит запросов: 4 проверки в минуту (ограничение API)</li>
-        <li>Данные не сохраняются в нашей базе после проверки</li>
-    </ul>
-    
-    <p>Использование API соответствует <a href="https://support.virustotal.com/hc/en-us/articles/115002168385-Privacy-Policy" target="_blank">политике конфиденциальности VirusTotal</a>.</p>
     
     <div class="notice">
-        <strong>Важно:</strong> Отправляя файл или ссылку на проверку, вы соглашаетесь с их передачей в VirusTotal. 
-        Не проверяйте конфиденциальные или приватные материалы.
+        <strong>Важно:</strong> Проверка доступна только администраторам и модераторам. Отправляя файл или ссылку, они соглашаются с их передачей в VirusTotal в соответствии с <a href="https://support.virustotal.com/hc/en-us/articles/115002168385-Privacy-Policy" target="_blank">политикой конфиденциальности VirusTotal</a>.
     </div>
 </div>
     
