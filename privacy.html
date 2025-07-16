@@ -452,22 +452,15 @@
             margin-bottom: 0.6rem;
             color: #666;
         }
-    /* для меню:
-nav {
-    background: rgba(88, 101, 242, 0.1);
-    padding: 0.8rem;
-    border-radius: 8px;
-    display: inline-block;
+    /* Стили для глоссария */
+.glossary-term {
+    color: var(--primary);
+    font-weight: 600;
 }
-nav a {
-    margin-right: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background 0.2s;
-}
-nav a:hover {
-    background: rgba(88, 101, 242, 0.2);
-    text-decoration: none;
+.category-card p {
+    margin: 0.5rem 0 0 0;
+    color: #555;
+    line-height: 1.5;
 }
     </style>
 </head>
@@ -820,6 +813,72 @@ nav a:hover {
         </div>
     </div>
 
+    <!-- Раздел 9. Возрастные ограничения --> 
+<div class="section">
+    <h2>9. Возрастные ограничения</h2>
+    <div class="notice warning">
+        <div class="notice-content">
+            <strong>Discord запрещает использование платформы лицам младше 13 лет.</strong>
+            <p>Бот не собирает и не обрабатывает данные пользователей, не соответствующих возрастным требованиям Discord.</p>
+        </div>
+    </div>
+    <ul>
+        <li>Discord автоматически блокирует аккаунты пользователей младше 13 лет при обнаружении</li>
+        <li>Администраторы серверов несут ответственность за соблюдение возрастных правил</li>
+        <li>Бот не запрашивает и не хранит возраст пользователей</li>
+    </ul>
+</div>
+
+    <!-- Раздел 10. Глоссарий -->
+<div class="section">
+    <h2>10. Глоссарий</h2>
+    
+    <div class="category-tabs">
+        <button class="tab-button active" data-tab="terms">Термины</button>
+        <button class="tab-button" data-tab="permissions">Права Discord</button>
+        <button class="tab-button" data-tab="technical">Технические</button>
+    </div>
+    
+    <div class="tab-content active" id="terms">
+        <div class="category-grid">
+            <div class="category-card">
+                <h4>🔒 Персональные данные</h4>
+                <p>Любая информация, относящаяся к идентифицированному физическому лицу (Discord ID, никнейм и т.д.)</p>
+            </div>
+            <div class="category-card">
+                <h4>📊 Метаданные</h4>
+                <p>Данные о данных (время отправки сообщения, авторство, ID сервера)</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="permissions">
+        <div class="category-grid">
+            <div class="category-card">
+                <h4><code>Manage Roles</code></h4>
+                <p>Право создавать, редактировать и назначать роли на сервере</p>
+            </div>
+            <div class="category-card">
+                <h4><code>View Audit Log</code></h4>
+                <p>Доступ к журналу модерационных действий сервера</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="technical">
+        <div class="category-grid">
+            <div class="category-card">
+                <h4>API</h4>
+                <p>Интерфейс программирования приложений для взаимодействия с сервисами (Discord API, YouTube API)</p>
+            </div>
+            <div class="category-card">
+                <h4>База данных (БД)</h4>
+                <p>Хранилище данных бота (сообщения, настройки серверов)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
     <footer>
         
         <p>© 2025 Argus_Bot. Все права защищены.</p>
@@ -831,28 +890,29 @@ nav a:hover {
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabButtons = document.querySelectorAll('.tab-button');
-            
-            tabButtons.forEach(button => {
+    document.addEventListener('DOMContentLoaded', function() {
+        // Обработчик для всех групп вкладок
+        function setupTabs(containerClass, buttonClass, contentClass) {
+            document.querySelectorAll(`.${buttonClass}`).forEach(button => {
                 button.addEventListener('click', function() {
-                    // Удаляем активный класс у всех кнопок и контента
-                    document.querySelectorAll('.tab-button').forEach(btn => {
+                    const parent = this.closest(`.${containerClass}`);
+                    
+                    parent.querySelectorAll(`.${buttonClass}`).forEach(btn => {
                         btn.classList.remove('active');
                     });
-                    document.querySelectorAll('.tab-content').forEach(content => {
+                    parent.querySelectorAll(`.${contentClass}`).forEach(content => {
                         content.classList.remove('active');
                     });
                     
-                    // Добавляем активный класс к текущей кнопке
                     this.classList.add('active');
-                    
-                    // Показываем соответствующий контент
-                    const tabId = this.getAttribute('data-tab');
-                    document.getElementById(tabId).classList.add('active');
+                    document.getElementById(this.dataset.tab).classList.add('active');
                 });
             });
-        });
-    </script>
+        }
+        
+        // Инициализация всех групп вкладок
+        setupTabs('category-tabs', 'tab-button', 'tab-content');
+    });
+</script>
 </body>
 </html>
