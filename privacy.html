@@ -184,14 +184,42 @@
         .twitch-badge {
             background-color: var(--twitch);
         }
-        footer {
-            margin-top: 4rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #666;
-            padding-top: 1.5rem;
-            border-top: 1px solid #eee;
-        }
+      
+footer {
+    margin-top: 4rem;
+    padding: 2rem 0 1rem;
+    border-top: 1px solid #eee;
+    background: #fff;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footer-url {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 0.5rem;
+}
+
+.footer-url a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.footer-url a:hover {
+    text-decoration: underline;
+}
+      
         a {
             color: var(--primary);
             text-decoration: none;
@@ -516,7 +544,8 @@
             </div>
         </div>
     </div>
-
+</div>
+  
     <div class="section">
         <h2>2. Права доступа бота</h2>
         
@@ -874,26 +903,25 @@
         </div>
 
  <div class="api-service">
-        <h3>
-            <img src="https://www.google.com/s2/favicons?domain=steampowered.com&sz=32" 
-                 class="api-logo" 
-                 alt="Steam">
-            <span class="badge">Steam</span>
-        </h3>
-        <p>Для работы с уведомлениями используется <a href="https://developer.valvesoftware.com/wiki/Steam_Web_API" target="_blank">Steam Web API</a>:</p>
-        <ul>
-            <li>Хранятся только Steam ID пользователей для отслеживания активности</li>
-            <li>Данные используются согласно <a href="https://store.steampowered.com/privacy_agreement/" target="_blank">политике Steam</a></li>
-            <li>Частота проверки: каждые 30 минут для активности, ежедневно для релизов и скидок</li>
-        </ul>
-        <p>Основные команды Steam:</p>
-        <ul>
-            <li><code>!steam_notify</code> - настройка уведомлений</li>
-            <li><code>!steam_track</code> - добавление пользователя для отслеживания</li>
-            <li><code>!steam_untrack</code> - удаление пользователя из отслеживания</li>
-        </ul>
-    </div>
-    </div>
+    <h3>
+        <img src="https://www.google.com/s2/favicons?domain=steampowered.com&sz=32" 
+             class="api-logo" 
+             alt="Steam">
+        <span class="badge">Steam</span>
+    </h3>
+    <p>Для работы с уведомлениями используется <a href="https://developer.valvesoftware.com/wiki/Steam_Web_API" target="_blank">Steam Web API</a>:</p>
+    <ul>
+        <li>Хранятся только Steam ID пользователей для отслеживания активности</li>
+        <li>Данные используются согласно <a href="https://store.steampowered.com/privacy_agreement/" target="_blank">политике Steam</a></li>
+        <li>Частота проверки: каждые 30 минут для активности, ежедневно для релизов и скидок</li>
+    </ul>
+    <p>Основные команды Steam:</p>
+    <ul>
+        <li><code>!steam_notify</code> - настройка уведомлений</li>
+        <li><code>!steam_track</code> - добавление пользователя для отслеживания</li>
+        <li><code>!steam_untrack</code> - удаление пользователя из отслеживания</li>
+    </ul>
+</div>
         
    <!-- Раздел 6. Права пользователей -->
 <div class="section">
@@ -1113,18 +1141,21 @@
             <p>⏳ Время ответа: в течение 72 часов</p>
         </div>
     </div>
-    
-    <footer>
-    <p>© 2025 Argus_Bot. Все права защищены.</p>
-    <p>Связанные документы: 
-        <a href="terms.html" target="_blank">Условия использования</a> | 
-        <a href="https://discord.com/terms" target="_blank">Условия Discord</a>
-    </p>
-    <p>Последняя версия документа всегда доступна по адресу: 
-        <a href="https://direzon95.github.io/Argus_Bot/privacy.html" target="_blank">
-            https://direzon95.github.io/Argus_Bot/privacy.html
-        </a>
-    </p>
+      
+   <footer>
+    <div class="footer-content">
+        <p>© 2025 Argus_Bot. Все права защищены.</p>
+        <div class="footer-links">
+            <a href="terms.html" target="_blank">Условия использования</a> | 
+            <a href="https://discord.com/terms" target="_blank">Условия Discord</a>
+        </div>
+        <div class="footer-url">
+            Последняя версия документа: 
+            <a href="https://direzon95.github.io/Argus_Bot/privacy.html" target="_blank">
+                direzon95.github.io/Argus_Bot/privacy.html
+            </a>
+        </div>
+    </div>
 </footer>
 
     <script>
