@@ -485,7 +485,17 @@
 [class*="tab-button"].active {
     box-shadow: 0 0 0 2px var(--primary);
 }
-        
+
+.badge {
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-color: var(--primary); /* Добавлено для стандартных бейджей */
+} 
     </style>
 </head>
 <body>
@@ -841,21 +851,6 @@
 
         <div class="api-service">
             <h3>
-                <img src="https://www.google.com/s2/favicons?domain=ipinfo.io&sz=32" 
-                     class="api-logo" 
-                     alt="ipinfo.io">
-                Геоданные (ipinfo.io)
-            </h3>
-            <p>Для определения примерного местоположения (страны и города) по IP-адресу используется сервис <a href="https://ipinfo.io" target="_blank">ipinfo.io</a>. Передаются только:</p>
-            <ul>
-                <li>IP-адрес пользователя</li>
-                <li>Тип устройства</li>
-            </ul>
-            <p>Данные не сохраняются в нашей базе и обрабатываются согласно <a href="https://ipinfo.io/privacy-policy" target="_blank">политике ipinfo.io</a>.</p>
-        </div>
-
-        <div class="api-service">
-            <h3>
                 <img src="https://www.google.com/s2/favicons?domain=spotify.com&sz=32" 
                      class="api-logo" 
                      alt="Spotify">
@@ -891,6 +886,27 @@
                 <li>Данные используются согласно <a href="https://top.gg/privacy" target="_blank">политике Top.gg</a></li>
             </ul>
         </div>
+
+ <div class="api-service">
+        <h3>
+            <img src="https://www.google.com/s2/favicons?domain=steampowered.com&sz=32" 
+                 class="api-logo" 
+                 alt="Steam">
+            <span class="badge">Steam</span>
+        </h3>
+        <p>Для работы с уведомлениями используется <a href="https://developer.valvesoftware.com/wiki/Steam_Web_API" target="_blank">Steam Web API</a>:</p>
+        <ul>
+            <li>Хранятся только Steam ID пользователей для отслеживания активности</li>
+            <li>Данные используются согласно <a href="https://store.steampowered.com/privacy_agreement/" target="_blank">политике Steam</a></li>
+            <li>Частота проверки: каждые 30 минут для активности, ежедневно для релизов и скидок</li>
+        </ul>
+        <p>Основные команды Steam:</p>
+        <ul>
+            <li><code>!steam_notify</code> - настройка уведомлений</li>
+            <li><code>!steam_track</code> - добавление пользователя для отслеживания</li>
+            <li><code>!steam_untrack</code> - удаление пользователя из отслеживания</li>
+        </ul>
+    </div>
     </div>
 
 <div class="api-service">
