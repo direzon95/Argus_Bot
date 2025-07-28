@@ -381,14 +381,24 @@
             background-color: var(--warning);
         }
         footer {
-            margin-top: 4rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #666;
-            padding-top: 1.5rem;
-            border-top: 1px solid #eee;
-            clear: both;
-        }
+    margin-top: 4rem;
+    padding: 2rem 0 1rem;
+    border-top: 1px solid #eee;
+    background: #fff;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
         a {
             color: var(--primary);
             text-decoration: none;
@@ -576,9 +586,10 @@
         <ul>
             <li>Использование регулируется <a href="https://discord.com/terms" target="_blank">Условиями Discord</a></li>
         </ul>
+        </div>
     </div>
-</div>
-        
+</div>  
+    
     <div class="section">
     <h2>2. Обязанности пользователей</h2>
     
@@ -899,12 +910,14 @@
 </div>
         
     <footer>
+    <div class="footer-content">
         <p>© 2025 Argus_Bot. Все права защищены.</p>
-        <p>Связанные документы: 
+        <div class="footer-links">
             <a href="privacy.html" target="_blank">Политика конфиденциальности</a> | 
             <a href="https://discord.com/terms" target="_blank">Условия Discord</a>
-        </p>
-    </footer>
+        </div>
+    </div>
+</footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
