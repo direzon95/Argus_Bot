@@ -447,13 +447,34 @@
         [class*="tab-button"].active {
             box-shadow: 0 0 0 2px var(--primary);
         }
+        .permission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 1.8rem 0;
+}
+
+.permission-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.permission-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 0;
+}
+
+.permission-list li:before {
+    content: none;
+}
     </style>
 </head>
 <body>
     <header>
         <h1>Условия использования</h1>
         <p>Discord-бота <strong>Argus_Bot</strong></p>
-        <div class="last-updated">Последнее обновление: 23.07.2025</div>
+        <div class="last-updated">Последнее обновление: 28.07.2025</div>
     </header>
 
     <div class="section">
@@ -782,6 +803,17 @@
     <li>По умолчанию все виды логирования отключены и требуют явного включения</li>
     <li>Для работы функций требуется право <code>Manage Channels</code></li>
   </ul>
+</div>
+
+<div class="permission-card">
+            <div class="permission-icon">🎮</div>
+            <h4 class="permission-card-title">Steam функции</h4>
+            <ul class="permission-list">
+                <li><code>View Channels</code> - для отправки уведомлений</li>
+                <li><code>Embed Links</code> - для отображения информации</li>
+            </ul>
+        </div>
+    </div>
 </div>
         
     <div class="section">
