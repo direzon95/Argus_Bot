@@ -623,6 +623,21 @@ a[href^="#"]:hover {
                         </li>
                     </ul>
                 </div>
+
+                    <div class="permission-card">
+                    <div class="permission-icon">⏱️</div>
+                        <h4 class="permission-card-title">Система временных наказаний</h4>
+                            <ul class="permission-list">
+                                <li class="permission-item">
+                                    <span class="permission-badge">Manage Roles</span>
+                                    <span class="permission-desc">Для выдачи/снятия ролей мута</span>
+                                </li>
+                                <li class="permission-item">
+                                    <span class="permission-badge">Moderate Members</span>
+                                        <span class="permission-desc">Альтернативный метод ограничения</span>
+                                </li>
+                            </ul>
+                        </div>
                 
                 <div class="permission-card">
                     <div class="permission-icon">📋</div>
@@ -662,6 +677,16 @@ a[href^="#"]:hover {
                             <li><code>Kick Members</code> - кик пользователей</li>
                         </ul>
                     </div>
+                    
+                    <div class="category-card">
+                        <h4>⏳ Временные наказания</h4>
+                        <ul>
+                            <li><code>Manage Roles</code> - для мута через роли</li>
+                            <li>Автоматическое снятие по таймеру</li>
+                            <li>Команды: <code>!mute</code>, <code>!unmute</code>, <code>!tempban</code>, <code>!voicemute</code></li>
+                        </ul>
+                        </div>
+                    
                     <div class="category-card">
                         <h4>📝 Фильтр слов (2)</h4>
                         <ul>
@@ -799,6 +824,7 @@ a[href^="#"]:hover {
                     <li><strong>Без прав Manage Channels:</strong> отключается антирейд защита</li>
                     <li><strong>Без прав View Audit Log:</strong> недоступны расширенные логи модерации</li>
                     <li><strong>Без прав Send Messages:</strong> не работают уведомления Twitch</li>
+                    <li><strong>Без прав Manage Roles:</strong> не работают временные муты через систему ролей</li>
                 </ul>
             </div>
         </div>
@@ -1318,6 +1344,10 @@ a[href^="#"]:hover {
         <div class="category-card">
             <h4>📌 <code>Manage Channels</code></h4>
             <p>Право управления каналами. Требуется для создания лог-каналов</p>
+        </div>
+        <div class="category-card">
+            <h4>🔇 <code>Moderate Members</code></h4>
+            <p>Официальное право Discord для временного ограничения пользователей (альтернатива ролям)</p>
         </div>
         <div class="category-card">
             <h4>🔗 <code>Manage Webhooks</code></h4>
