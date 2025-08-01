@@ -635,6 +635,8 @@
             <li>Администраторы серверов несут ответственность за действия пользователей с ботом</li>
             <li>Рекомендуется ограничивать доступ к командам модерации</li>
             <li>Запрещено использовать бота для обхода блокировок Discord</li>
+            <li>При использовании команд модерации (<code>!mute</code>, <code>!tempban</code> и др.) необходимо указывать корректные сроки и обоснованные причины</li>
+            <li>Запрещено использовать систему временных наказаний для злоупотребления властью</li>
         </ul>
         
         <div class="notice">
@@ -730,6 +732,90 @@
         </ul>
     </div>
 
+<div class="permission-section">
+        <h3 class="permission-title">4.3. Система временных наказаний</h3>
+        
+        <div class="permission-grid">
+            <div class="permission-card">
+                <div class="permission-icon">⏱️</div>
+                <h4 class="permission-card-title">Принцип работы</h4>
+                <ul class="permission-list">
+                    <li class="permission-item">
+                        <span class="permission-badge">Ролевая система</span>
+                        <span class="permission-desc">Для мута создаются специальные роли</span>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">Автоматическое снятие</span>
+                        <span class="permission-desc">Наказания снимаются по истечении срока</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="permission-card">
+                <div class="permission-icon">🔧</div>
+                <h4 class="permission-card-title">Команды модерации</h4>
+                <ul class="permission-list">
+                    <li class="permission-item">
+                        <span class="permission-badge">!mute</span>
+                        <span class="permission-desc">Выдает текстовый мут</span>
+                        <div class="command-example">
+                            <code>!mute @user 1d10h "Причина"</code>
+                        </div>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">!voicemute</span>
+                        <span class="permission-desc">Мут в голосовых каналах</span>
+                        <div class="command-example">
+                            <code>!voicemute @user 2h "Шум в канале"</code>
+                        </div>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">!tempban</span>
+                        <span class="permission-desc">Временный бан участника</span>
+                        <div class="command-example">
+                            <code>!tempban @user 3d "Грубое нарушение"</code>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="permission-card">
+                <div class="permission-icon">🔄</div>
+                <h4 class="permission-card-title">Снятие наказаний</h4>
+                <ul class="permission-list">
+                    <li class="permission-item">
+                        <span class="permission-badge">!unmute</span>
+                        <span class="permission-desc">Снимает текстовый мут</span>
+                        <div class="command-example">
+                            <code>!unmute @user</code>
+                        </div>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">!voiceunmute</span>
+                        <span class="permission-desc">Снимает голосовой мут</span>
+                        <div class="command-example">
+                            <code>!voiceunmute @user</code>
+                        </div>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">!untempban</span>
+                        <span class="permission-desc">Снимает временный бан</span>
+                        <div class="command-example">
+                            <code>!untempban @user</code>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="notice">
+            <div class="notice-content">
+                <strong>Важно:</strong> Для работы системы временных наказаний боту требуются права <code>Manage Roles</code> и <code>Moderate Members</code>.
+            </div>
+        </div>
+    </div>
+</div>
+        
     <div class="section">
         <h2>5. Изменения условий</h2>
         
@@ -858,6 +944,23 @@
         </div>
     </div>       
         </div>
+
+<div class="permission-card">
+            <div class="permission-icon">⏱️</div>
+            <h4 class="permission-card-title">Система наказаний</h4>
+            <ul class="permission-list">
+                <li class="permission-item">
+                    <span class="permission-badge">Manage Roles</span>
+                    <span class="permission-desc">Для выдачи/снятия мут-ролей</span>
+                </li>
+                <li class="permission-item">
+                    <span class="permission-badge">Moderate Members</span>
+                    <span class="permission-desc">Альтернативный метод ограничения</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
         
         <h3>8.2. Рекомендации</h3>
         <ul>
