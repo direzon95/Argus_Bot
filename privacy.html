@@ -568,7 +568,20 @@ footer {
 a[href^="#"]:hover {
     color: var(--secondary);
 }
-      
+      .footer-plain-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.footer-plain-text a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.footer-plain-text a:hover {
+    text-decoration: underline;
+}
     </style>
 </head>
 <body>
@@ -1502,6 +1515,9 @@ a[href^="#"]:hover {
             <a href="https://direzon95.github.io/Argus_Bot/privacy.html" target="_blank">
                 direzon95.github.io/Argus_Bot/privacy.html
             </a>
+            <div class="footer-plain-text">
+            Соответствие: Полный список команд доступен на сайте: 
+            <a href="https://direzon95.github.io/commands_suite/" target="_blank">commands_suite</a>
         </div>
     </div>
 </footer>
