@@ -609,7 +609,7 @@ a[href^="#"]:hover {
     <header>
         <h1>Политика конфиденциальности</h1>
         <p>для Discord-бота <strong>Argus_Bot</strong></p>
-        <div class="last-updated">Последнее обновление: 01.08.2025</div>
+        <div class="last-updated">Последнее обновление: 05.08.2025</div>
     </header>
 
     <div class="section">
@@ -1059,6 +1059,49 @@ a[href^="#"]:hover {
     </ul>
 </div>
         
+      <div class="api-service">
+    <h3>
+        <img src="https://www.google.com/s2/favicons?domain=abuseipdb.com&sz=32" 
+             class="api-logo" 
+             alt="AbuseIPDB">
+        <span class="badge">AbuseIPDB</span>
+    </h3>
+    <p>Для проверки IP-адресов используется <a href="https://www.abuseipdb.com/" target="_blank">AbuseIPDB API</a>:</p>
+    <ul>
+        <li>Отправляются только проверяемые IP-адреса</li>
+        <li>Не сохраняется история запросов</li>
+        <li>Данные используются согласно <a href="https://www.abuseipdb.com/privacy" target="_blank">политике AbuseIPDB</a></li>
+        <li>Лимит: 100 запросов в день (для одного сервера)</li>
+    </ul>
+    <p>Команды:</p>
+    <ul>
+        <li><code>!iplookup [IP]</code> - проверка репутации IP-адреса</li>
+        <li><code>!iplookupstats</code> - статистика использования команды</li>
+    </ul>
+</div>
+
+<div class="api-service">
+    <h3>
+        <img src="https://www.google.com/s2/favicons?domain=ipinfo.io&sz=32" 
+             class="api-logo" 
+             alt="IPinfo">
+        <span class="badge">IPinfo</span>
+    </h3>
+    <p>Для получения геоданных и информации об IP-адресах используется <a href="https://ipinfo.io/" target="_blank">IPinfo API</a>:</p>
+    <ul>
+        <li>Отправляются только проверяемые IP-адреса</li>
+        <li>Кэширование результатов на 1 час</li>
+        <li>Данные используются согласно <a href="https://ipinfo.io/privacy-policy" target="_blank">политике IPinfo</a></li>
+        <li>Лимит: 50 000 запросов в месяц (для одного сервера)</li>
+    </ul>
+    <p>Команды:</p>
+    <ul>
+        <li><code>!ipinfo [IP]</code> - подробная информация об IP-адресе</li>
+        <li><code>!whois [IP/домен]</code> - WHOIS информация</li>
+        <li><code>!checkproxy [IP]</code> - проверка на использование прокси/VPN/TOR</li>
+    </ul>
+</div>
+      
  <!-- Раздел 6. Права пользователей -->
 <div class="section" id="section6">
    <h2 id="user-rights-gdpr">6. Права пользователей</h2>
