@@ -603,6 +603,21 @@ a[href^="#"]:hover {
 .footer-compliance a:hover {
     text-decoration: underline;
 }
+      /* Плавный скролл для якорных ссылок */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Стиль для активного якоря */
+:target {
+  animation: highlight 1.5s ease;
+}
+
+@keyframes highlight {
+  0% { background-color: rgba(88, 101, 242, 0.1); }
+  100% { background-color: transparent; }
+}
+      
     </style>
 </head>
 <body>
