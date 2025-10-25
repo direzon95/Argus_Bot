@@ -989,7 +989,7 @@ html {
     </ul>
 </div>
 
-        <!-- Раздел 4.1. Антивирусное сканирование -->
+<!-- Раздел 4.1. Антивирусное сканирование и безопасность -->
 <div class="section">
     <h2>4.1. Антивирусное сканирование и безопасность</h2>
     
@@ -1000,35 +1000,43 @@ html {
     </div>
 
     <div class="permission-section">
-        <h3 class="permission-title">Типы и частота сканирований</h3>
+        <h3 class="permission-title">Система антивирусной защиты</h3>
         
         <div class="permission-grid">
             <div class="permission-card">
                 <div class="permission-icon">🔍</div>
-                <h4 class="permission-card-title">Легкое сканирование</h4>
+                <h4 class="permission-card-title">Быстрое сканирование</h4>
                 <ul class="permission-list">
                     <li class="permission-item">
-                        <span class="permission-badge">light_av_scan.sh</span>
-                        <span class="permission-desc">Сканирование критических файлов системы</span>
+                        <span class="permission-badge">Тип</span>
+                        <span class="permission-desc">Проверка критических системных файлов</span>
                     </li>
                     <li class="permission-item">
                         <span class="permission-badge">Частота</span>
-                        <span class="permission-desc">По расписанию</span>
+                        <span class="permission-desc">Регулярно по расписанию</span>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">Назначение</span>
+                        <span class="permission-desc">Оперативное выявление угроз</span>
                     </li>
                 </ul>
             </div>
             
             <div class="permission-card">
                 <div class="permission-icon">📁</div>
-                <h4 class="permission-card-title">Сканирование изменений</h4>
+                <h4 class="permission-card-title">Инкрементное сканирование</h4>
                 <ul class="permission-list">
                     <li class="permission-item">
-                        <span class="permission-badge">incremental_scan.sh</span>
-                        <span class="permission-desc">Проверка измененных файлов</span>
+                        <span class="permission-badge">Тип</span>
+                        <span class="permission-desc">Проверка измененных и новых файлов</span>
                     </li>
                     <li class="permission-item">
                         <span class="permission-badge">Частота</span>
-                        <span class="permission-desc">При обнаружении изменений</span>
+                        <span class="permission-desc">При обнаружении изменений в системе</span>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">Назначение</span>
+                        <span class="permission-desc">Мониторинг активности файловой системы</span>
                     </li>
                 </ul>
             </div>
@@ -1038,27 +1046,79 @@ html {
                 <h4 class="permission-card-title">Полное сканирование</h4>
                 <ul class="permission-list">
                     <li class="permission-item">
-                        <span class="permission-badge">antivirus_daily_scan.sh</span>
-                        <span class="permission-desc">Полная проверка системы</span>
+                        <span class="permission-badge">Тип</span>
+                        <span class="permission-desc">Комплексная проверка всей системы</span>
                     </li>
                     <li class="permission-item">
                         <span class="permission-badge">Частота</span>
-                        <span class="permission-desc">По воскресеньям</span>
+                        <span class="permission-desc">Еженедельно (по воскресеньям)</span>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">Назначение</span>
+                        <span class="permission-desc">Глубокая проверка на скрытые угрозы</span>
                     </li>
                 </ul>
             </div>
             
             <div class="permission-card">
                 <div class="permission-icon">🔄</div>
-                <h4 class="permission-card-title">Мониторинг загрузок</h4>
+                <h4 class="permission-card-title">Мониторинг в реальном времени</h4>
                 <ul class="permission-list">
                     <li class="permission-item">
-                        <span class="permission-badge">drweb_scanner.sh</span>
-                        <span class="permission-desc">Контроль файлов из Discord</span>
+                        <span class="permission-badge">Тип</span>
+                        <span class="permission-desc">Постоянный контроль файловых операций</span>
                     </li>
                     <li class="permission-item">
                         <span class="permission-badge">Частота</span>
-                        <span class="permission-desc">Каждый час + при загрузке</span>
+                        <span class="permission-desc">Непрерывно + при каждой загрузке файлов</span>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">Назначение</span>
+                        <span class="permission-desc">Защита от угроз в реальном времени</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="permission-section">
+        <h3 class="permission-title">Обновления и обслуживание</h3>
+        
+        <div class="permission-grid">
+            <div class="permission-card">
+                <div class="permission-icon">📦</div>
+                <h4 class="permission-card-title">Обновление баз</h4>
+                <ul class="permission-list">
+                    <li class="permission-item">
+                        <span class="permission-badge">Процесс</span>
+                        <span class="permission-desc">Автоматическое обновление антивирусных баз</span>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">Частота</span>
+                        <span class="permission-desc">Регулярно, по мере выхода обновлений</span>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">Результат</span>
+                        <span class="permission-desc">Генерация отчетов об успешности обновлений</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="permission-card">
+                <div class="permission-icon">⚡</div>
+                <h4 class="permission-card-title">Сканирование загрузок</h4>
+                <ul class="permission-list">
+                    <li class="permission-item">
+                        <span class="permission-badge">Триггер</span>
+                        <span class="permission-desc">Любая загрузка файлов через Discord бота</span>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">Метод</span>
+                        <span class="permission-desc">Автоматическая проверка перед обработкой</span>
+                    </li>
+                    <li class="permission-item">
+                        <span class="permission-badge">Действие</span>
+                        <span class="permission-desc">Блокировка подозрительных файлов</span>
                     </li>
                 </ul>
             </div>
@@ -1067,14 +1127,21 @@ html {
 
     <h3>Обрабатываемые данные</h3>
     <ul>
-        <li><strong>Файлы, загружаемые через бота:</strong> автоматически сканируются на наличие угроз</li>
-        <li><strong>Системные файлы сервера:</strong> регулярно проверяются на целостность</li>
-        <li><strong>Метаданные сканирования:</strong> время, результат, обнаруженные угрозы (если есть)</li>
+        <li><strong>Файлы, загружаемые через бота:</strong> автоматически сканируются на наличие угроз перед обработкой</li>
+        <li><strong>Системные файлы сервера:</strong> регулярно проверяются на целостность и отсутствие угроз</li>
+        <li><strong>Метаданные сканирования:</strong> время выполнения, результат проверки, статистика (без содержимого файлов)</li>
+        <li><strong>Технические сигнатуры:</strong> хэши файлов для сравнения с базой угроз</li>
     </ul>
 
     <div class="notice success">
         <div class="notice-content">
-            <strong>Гарантия конфиденциальности:</strong> Сканирование затрагивает только технические аспекты файлов (сигнатуры, хэши). Содержимое пользовательских файлов не анализируется и не сохраняется.
+            <strong>Гарантия конфиденциальности:</strong> Антивирусное сканирование анализирует только технические характеристики файлов (сигнатуры, хэши, метаданные). Содержимое пользовательских файлов не читается и не сохраняется. Все проверки выполняются в автоматическом режиме без доступа к персональным данным.
+        </div>
+    </div>
+
+    <div class="notice">
+        <div class="notice-content">
+            <strong>Безопасность системы:</strong> Антивирусная защита работает на уровне операционной системы сервера и обеспечивает безопасность как пользовательских данных, так и стабильность работы всего сервиса.
         </div>
     </div>
 </div>
